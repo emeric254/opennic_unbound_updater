@@ -1,0 +1,11 @@
+[Unit]
+Description=Opennic unbound updater
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/root/opennic_unbound_updater/opennic_unbound_updater.sh
+
+[Install]
+WantedBy=multi-user.target

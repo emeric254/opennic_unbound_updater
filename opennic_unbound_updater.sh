@@ -8,7 +8,7 @@ API_REQUEST="https://api.opennicproject.org/geoip/?list&ipv=all&res=200&pct=95&a
 
 ###############################
 
-curl $API_REQUEST > $TMP_FILE
+curl -s $API_REQUEST > $TMP_FILE
 
 if [  $? -ne 0 ]
 then
